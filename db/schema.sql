@@ -1,2 +1,3 @@
 DROP DATABASE IF EXISTS diaryBlog_db;
+
 CREATE DATABASE diaryBlog_db;
