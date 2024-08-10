@@ -1,7 +1,7 @@
 // will hold Routes for user-related API calls
 const express = require('express');
 const app = express();
-const userRoutes = require('./controllers/api/userRoutes');
+const userRoutes = require('../api');
 
 app.use(express.json());
 app.use('/api/users', userRoutes);
@@ -59,3 +59,6 @@ router.delete('/users/:id', async (req, res) => {
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+module.exports = userRoutes;
